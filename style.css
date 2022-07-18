@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@394&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(image/123.gif);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    background-size: auto;
+    position: relative;
+    color: #fff;
+}
+
+section {
+    display: block;
+}
+
+/* ------------------------- Navbar Css ------------------------- */
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 100px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #5bd7ff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/* ------------------------- Header Section Css ------------------------- */
+
+.header {
+    margin-left: 130px;
+}
+
+.header-text-one {
+    font-size: 60px;
+    margin-top: 65px;
+}
+
+.header-text-two {
+    margin-top: -10px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.header-text-two span {
+    color: #0077ff;
+}
+
+.header-text-three {
+    font-size: 50px;
+    margin-top: -10px;
+    margin-left: 2px;
+}
+
+.header-text-four {
+    font-size: 40px;
+}
+
+.header-text-four .country {
+    background: linear-gradient(to right, #ff6600, #fff, #0fb900);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* ------------------------- About Section Css ------------------------- */
+
+
+.about-title {
+    margin-top: 160px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: #0077ff;
+}
+
+.about-description {
+    margin-top: 40px;
+    padding-left: 130px;
+    padding-right: 130px;
+    font-size: 25px;
+    text-align: left;
+}
